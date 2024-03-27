@@ -1,0 +1,139 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="4192372177" file="C:\Users\Vladivostok\code\holoeye3d\HoloEye3D.prj" location="C:\Users\Vladivostok\code\holoeye3d" name="HoloEye3D" preferred-package-location="C:\Users\Vladivostok\code\holoeye3d\HoloEye3D\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>HoloEye3D</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\HoloEye3D\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\HoloEye3D\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\HoloEye3D\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\HoloEye3D\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\HoloEye3D</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>HoloEye3D_installer</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\HoloEye3D.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\applyReg.m</file>
+      <file>${PROJECT_ROOT}\autoMask.m</file>
+      <file>${PROJECT_ROOT}\dftregistration.m</file>
+      <file>${PROJECT_ROOT}\getColorPlot.m</file>
+      <file>${PROJECT_ROOT}\makeFundus.m</file>
+      <file>${PROJECT_ROOT}\movieRotation.m</file>
+      <file>${PROJECT_ROOT}\movieStretching.m</file>
+      <file>${PROJECT_ROOT}\parfor_wait.m</file>
+      <file>${PROJECT_ROOT}\regOutput.m</file>
+      <file>${PROJECT_ROOT}\regParameters.m</file>
+      <file>${PROJECT_ROOT}\rotationRegistration.m</file>
+      <file>${PROJECT_ROOT}\stretchingRegistration.m</file>
+      <file>${PROJECT_ROOT}\subplot_grid.m</file>
+      <file>${PROJECT_ROOT}\translationRegistration.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\HoloEye3D\for_testing" name="readme.txt" optional="true">C:\Users\Vladivostok\code\holoeye3d\HoloEye3D\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\HoloEye3D\for_testing" name="HoloEye3D.exe" optional="false">C:\Users\Vladivostok\code\holoeye3d\HoloEye3D\for_testing\HoloEye3D.exe</file>
+      <file location="${PROJECT_ROOT}\HoloEye3D\for_testing" name="splash.png" optional="false">C:\Users\Vladivostok\code\holoeye3d\HoloEye3D\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="gpucoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
